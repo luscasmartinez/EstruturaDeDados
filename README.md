@@ -4,11 +4,11 @@ Aulas de Estrutura de Dados
 Este repositório contém materiais relacionados às aulas de Estrutura de Dados. Ele é destinado a registrar todos os códigos, projetos de demais trabalhos desenvolvidos relacionadas a cadeira de Estrutura de dados.
 
 
-#As estruturas de dados que seram abordadas no repositório incluem:
+# As estruturas de dados que seram abordadas no repositório incluem:
 
--Listas
--Pilhas
--Filas
--Árvores
--Grafos
--Tabelas de Hash
+- Listas
+- Pilhas
+- Filas
+- Árvores
+- Grafos
+- Tabelas de Hash
