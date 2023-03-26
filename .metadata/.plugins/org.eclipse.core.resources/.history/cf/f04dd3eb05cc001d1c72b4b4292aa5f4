@@ -1,0 +1,17 @@
+package a;
+
+public class Pontos {
+
+	private double x1,x2,y1,y2,dx,dy;
+	
+	public double coordenada1(){
+		dx = x1-x2;
+		return dx;
+	}
+	
+	public double coordenada() {
+		dy = y1-y2;
+		return dy;
+	}
+	
+}

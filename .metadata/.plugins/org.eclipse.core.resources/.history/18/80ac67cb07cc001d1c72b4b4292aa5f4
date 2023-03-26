@@ -1,0 +1,16 @@
+package a;
+
+public class Main {
+    public static void main(String[] args) {
+    	
+    	double x1 = 1;
+        double y1 = 2;
+        double x2 = 4;
+        double y2 = 6;
+
+        Pontos pontos = new Pontos(x1, y1, x2, y2);
+        double distancia = pontos.getDistanciaEuclidiana();
+
+        System.out.println("Distância entre os pontos: " + distancia);
+    }
+}
