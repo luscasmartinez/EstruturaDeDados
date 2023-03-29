@@ -19,7 +19,7 @@ public class Test {
 		System.out.println("Informe a coordenada X2");
 		pontos.setX2(scan.nextDouble());
 
-		System.out.println("Informe a coordenada y2");
+		System.out.println("Informe a coordenada y2s");
 		pontos.setY2(scan.nextDouble());
 
 		double distanciaX = pontos.getDx();

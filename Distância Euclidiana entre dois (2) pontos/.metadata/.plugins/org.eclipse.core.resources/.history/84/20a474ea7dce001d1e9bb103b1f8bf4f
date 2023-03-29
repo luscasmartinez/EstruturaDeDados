@@ -36,12 +36,9 @@ public class Pontos {
 		this.y2 = y2;
 	}
 
-	public double getDx() {
+	public double getDistanciaEuclidiana() {
         double dx = getX1() - getX2();
-        return dx;
+        double dy = getY1() - getY2();
+        return DistanciaEucli.distanciaEuclidiana(dx, dy);
     }
-	public double getDy() {
-		double dy = getY1() - getY2();
-		return dy;
-	}
 }
