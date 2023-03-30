@@ -3,8 +3,7 @@ package atividade_3;
 public class Vetor {
 	
 	private double vetNotas [] = new double[5];
-	private Aluno vetAluno[] = new Aluno[5];
-	
+	private Aluno vetAlunos[] = new Aluno[5];
 	
 	
 	public void addNota(double nota) {
@@ -20,8 +19,13 @@ public class Vetor {
 	    }
 	}
 	
-	public void addAluno() {
-		
+	public void addAluno(Aluno aluno, Aluno[] vetAlunos) {
+		for (int i = 0; i < vetAlunos.length; i++) {
+			if(vetAlunos[i] == null) {
+				vetAlunos[i] = aluno;
+				break;
+			}
+		}
 	}
 	
 }
