@@ -1,4 +1,4 @@
-package atividade_3;
+package atividade_2;
 
 public class Main {
 
@@ -11,7 +11,7 @@ public class Main {
 		turma.adicionarAluno(aluno1);
 		Aluno aluno2 = new Aluno("Maria", 19, 7.8);
 		turma.adicionarAluno(aluno2);
-		// ...
+		
 
 	}
 
