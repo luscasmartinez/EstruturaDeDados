@@ -18,4 +18,12 @@ public class Vetor {
 			System.out.println("Turma cheia!");
 		}
 	}
+	public boolean Contem (Aluno aluno) {
+		for(int i = 0; i < alunos.length; i++){
+			if(aluno.getNome() == alunos[i].getNome()){
+				return true;
+			}
+			return false;
+		}	
+	}
 }
