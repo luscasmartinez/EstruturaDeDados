@@ -13,7 +13,7 @@ public class LSE<T> implements Lista {
         if(inicio == null)
             inicio = novo;
         else{
-            novo.setProximo(novo);
+            novo.setProximo(inicio);
             inicio = novo;
         }
         

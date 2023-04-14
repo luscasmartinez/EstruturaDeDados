@@ -3,6 +3,7 @@ public class App {
         Lista l = new LSE();
 
         l.insereInicio(51);
+        l.insereInicio(5112157);
         l.insereFim(15);
         l.insereFim(155);
 
