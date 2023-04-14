@@ -3,13 +3,18 @@ public class App {
         Lista l = new LSE();
 
         l.insereInicio(51);
-
         l.insereFim(15);
         l.insereFim(155);
-        
-
 
         l.imprimeLista();
-        System.out.println(l.tamanho());
+        
+        System.out.println("O tamanho da lista é: "+l.tamanho());
+        System.out.println();
+        
+        l.remove(51);
+
+        l.imprimeLista();
+        
+        System.out.println("O tamanho da lista é: "+l.tamanho());
     }
 }
