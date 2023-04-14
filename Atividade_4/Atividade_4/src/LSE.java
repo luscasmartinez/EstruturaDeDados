@@ -16,7 +16,7 @@ public class LSE implements Lista {
             novo.setProximo(novo);
             inicio = novo;
         }
-        throw new UnsupportedOperationException("Unimplemented method 'insereInicio'");
+        
     }
 
     @Override
@@ -30,7 +30,7 @@ public class LSE implements Lista {
                 ultimo = i;
             ultimo.setProximo(novo);
         }
-        throw new UnsupportedOperationException("Unimplemented method 'insereFim'");
+        
     }
 
     @Override
@@ -57,8 +57,13 @@ public class LSE implements Lista {
 
     @Override
     public int tamanho() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'tamanho'");
+        int tamanho = 0;
+        Noh novoNoh = inicio;
+        while (novoNoh != null){
+            tamanho++;
+            novoNoh = novoNoh.getProximo();
+        }
+        return tamanho;
     }
 
     public void imprimeLista(){
