@@ -20,7 +20,12 @@ public class App {
         Lista<String> l2 = new LSE<String>();
         l2.insereInicio("Inicio");
         l2.insereFim("Fim");
+        l2.insereFim("Que legal isso tudo");
 
+        l2.imprimeLista();
+
+
+        l2.remove("Fim");
         l2.imprimeLista();
     }
 }
