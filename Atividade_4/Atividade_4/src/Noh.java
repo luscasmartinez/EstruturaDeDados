@@ -1,14 +1,14 @@
-public class Noh {
-    private int info;
+public class Noh<T> {
+    private T info;
     private Noh proximo;
 
-    public Noh (int info){
+    public Noh (T info){
         this.info = info;
         this.proximo = null;
     }
 
 
-    public int getInfo() {
+    public T getInfo() {
         return this.info;
     }
 

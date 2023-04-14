@@ -16,5 +16,11 @@ public class App {
         l.imprimeLista();
         
         System.out.println("O tamanho da lista é: "+l.tamanho());
+
+        Lista<String> l2 = new LSE<String>();
+        l2.insereInicio("Inicio");
+        l2.insereFim("Fim");
+
+        l2.imprimeLista();
     }
 }

@@ -1,11 +1,11 @@
-public interface Lista {
-    public void insereInicio(int info);
+public interface Lista<T> {
+    public void insereInicio(T info);
 
-    public void insereFim(int info);
+    public void insereFim(T info);
 
     public boolean estahVazia();
 
-    public boolean remove(int info);
+    public boolean remove(T info);
 
     public int tamanho();
 

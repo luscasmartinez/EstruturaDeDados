@@ -1,13 +1,13 @@
-public class LSE implements Lista {
+public class LSE<T> implements Lista {
 
-    private Noh inicio;
+    private Noh<T> inicio;
 
     public LSE(){
         this.inicio = null;
     }
 
     @Override
-    public void insereInicio(int info) {
+    public void insereInicio(Object info) {
         Noh novo = new Noh(info);
 
         if(inicio == null)
@@ -20,7 +20,7 @@ public class LSE implements Lista {
     }
 
     @Override
-    public void insereFim(int info) {
+    public void insereFim(Object info) {
         Noh novo = new Noh(info);
         if (inicio == null)
             inicio = novo;
@@ -39,7 +39,7 @@ public class LSE implements Lista {
     }
 
     @Override
-    public boolean remove(int info) {
+    public boolean remove(Object info) {
         Noh ant = null, p;
         p = inicio;
         while (p != null && p.getInfo() != info){
@@ -74,5 +74,6 @@ public class LSE implements Lista {
         }
         System.out.println("");
     }
-    
+
+   
 }
