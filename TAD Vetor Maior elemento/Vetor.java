@@ -1,4 +1,4 @@
-public class Vetor {
+public class Vetor implements IVetor {
     private int[] elementos;
     private int tamanho;
 
@@ -11,7 +11,9 @@ public class Vetor {
         return tamanho;
     }
 
-    public int getElementos(int indice) {
+
+    @Override
+    public int getElemento(int indice) {
         return elementos[indice];
     }
 
@@ -45,4 +47,7 @@ public class Vetor {
         }
         return maior;
     }
+
+    
+
 }
