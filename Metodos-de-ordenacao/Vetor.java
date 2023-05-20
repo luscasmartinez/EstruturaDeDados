@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Vetor implements IVetor{
+public class Vetor  {
     private int[] elementos;
 
     public Vetor(int tamanho) {
@@ -25,44 +25,41 @@ public class Vetor implements IVetor{
         }
     }
 
-    Public void bubble_sort(){
-        for (int i = 0; i < this.tamanho; i++){
-            for (int j = 0; j < this.tamanho-1; j++){
-                if (this.vet[j] > this.vet[j+1]) {
-                    int aux = this.vet[j];
-                    this.vet[j] = this.vet[j+1];
-                     this.vet[j+1] = aux;
+    public void bubbleSort() {
+        for (int i = 0; i < tamanho() - 1; i++) {
+            for (int j = 0; j < tamanho() - i - 1; j++) {
+                if (elementos[j] > elementos[j + 1]) {
+                    int aux = elementos[j];
+                    elementos[j] = elementos[j + 1];
+                    elementos[j + 1] = aux;
                 }
             }
         }
     }
 
-
-    Public void selection_sort(){
-        for (int i = 0; i < this.totalElem; i++) {
+    public void selectionSort() {
+        for (int i = 0; i < tamanho() - 1; i++) {
             int menor = i;
-            for (int j = i+1; j < this.totalElem; j++) { 
-                if (this.vet[j] < this.vet[menor]){
+            for (int j = i + 1; j < tamanho(); j++) {
+                if (elementos[j] < elementos[menor]) {
                     menor = j;
-                    int aux = vet[i];
-                    this.vet[i] = this.vet[menor];
-                    this.vet[menor] = aux; 
                 }
             }
+            int aux = elementos[i];
+            elementos[i] = elementos[menor];
+            elementos[menor] = aux;
         }
     }
 
-    public void insertion_sort() {
-        for (int i = 1; i < this.totalElem; i++) {
-            int chave = this.vet[i];
+    public void insertionSort() {
+        for (int i = 1; i < tamanho(); i++) {
+            int chave = elementos[i];
             int j = i - 1;
-            while (j >= 0 && chave < this.vet[j]) {
-                this.vet[j + 1] = this.vet[j];
+            while (j >= 0 && elementos[j] > chave) {
+                elementos[j + 1] = elementos[j];
                 j--;
             }
-        this.vet[j + 1] = chave;
+            elementos[j + 1] = chave;
         }
     }
-        
-
 }
