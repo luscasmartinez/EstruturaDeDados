@@ -1,0 +1,18 @@
+O método insereOrdenado() recebe um número inteiro info e insere esse número na lista duplamente encadeada.
+
+Primeiro, verificamos se a lista está vazia usando o método estahVazia(). Se estiver vazia, chamamos o método insereInicio() 
+para inserir o número como o primeiro elemento da lista.
+
+Caso contrário, percorremos a lista para encontrar a posição correta onde o novo número deve ser inserido. Comparamos o valor
+do novo número (info) com o valor do nó atual. Se o novo número for maior, continuamos avançando para o próximo nó até encontrarmos
+a posição correta.
+
+Existem três possibilidades ao encontrar a posição correta:
+
+Se o nó atual for null, isso significa que chegamos ao final da lista, então chamamos o método insereFim() para inserir o novo número como o último elemento da lista.
+Se o nó atual for o inicio, isso significa que o novo número deve ser inserido no início da lista. Nesse caso, chamamos o método insereInicio() para inserir o novo
+número como o primeiro elemento da lista.
+Caso contrário, estamos no ponto intermediário da lista. Criamos um novo nó (novoNoh) e ajustamos os links do nó anterior (ant) e do nó atual (atual) para inserir
+corretamente o novo número na posição adequada.
+A complexidade do pior caso para o método insereOrdenado() é O(n), n é o tamanho da lista, no pior caso, precisamos percorrer todos os nós
+da lista para encontrar a posição correta para inserir o novo número.

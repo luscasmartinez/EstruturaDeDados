@@ -1,0 +1,20 @@
+O(n) = 4n² + 3n + 2
+Nesse caso, a fórmula possui um termo quadrático (4n²), um termo linear (3n) e uma constante (2). Na medida em que n aumenta, o termo quadrático domina a complexidade
+do algoritmo. Podemos classificar esse algoritmo como O(n²) uma complexidade quadrática.
+
+O(n) = n + 34
+Nesse caso, a fórmula possui apenas um termo linear (n) e uma constante (34). À medida que n aumenta, o termo linear é o que mais afeta a complexidade do algoritmo. 
+Podemos classificar esse algoritmo como O(n) uma complexidade linear.
+
+O(n) = n + 12
+Similarmente ao caso anterior, essa fórmula também possui apenas um termo linear (n) e uma constante (12). A complexidade desse algoritmo também é O(n),
+uma vez que a variação do valor de n é linearmente proporcional à variação do tempo de execução do algoritmo.
+
+O(n) = 3 + 5
+Nesse caso, a fórmula possui apenas constantes (3 e 5). Independentemente do valor de n, o tempo de execução desse algoritmo permanecerá constante. 
+Portanto, podemos classificá-lo como O(1) uma complexidade constante.
+
+O(n) = 3 + 5 (Complexidade constante)
+O(n) = n + 12 (Complexidade linear)
+O(n) = n + 34 (Complexidade linear)
+O(n) = 4n² + 3n + 2 (Complexidade quadrática)

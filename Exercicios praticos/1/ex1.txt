@@ -1,0 +1,14 @@
+Neste programa, o método encontrarIntersecao() recebe dois vetores de inteiros como entrada e retorna um terceiro
+vetor contendo os elementos comuns a ambos os vetores. O algoritmo realiza as seguintes etapas:
+
+Ordena os dois vetores de entrada usando o método Arrays.sort() para facilitar a comparação.
+Inicializa uma lista intersecao para armazenar os elementos comuns.
+Utiliza dois ponteiros i e j para percorrer os vetores arr1 e arr2, respectivamente.
+Enquanto os ponteiros não ultrapassarem o tamanho dos vetores, compara os elementos nos índices correspondentes.
+Se o elemento de arr1 for menor que o elemento de arr2, avança o ponteiro de arr1.
+Se o elemento de arr1 for maior que o elemento de arr2, avança o ponteiro de arr2.
+Se os elementos forem iguais, adiciona o elemento à lista intersecao e avança ambos os ponteiros.
+Converte a lista intersecao em um vetor e retorna-o.
+A complexidade do algoritmo no pior caso é O(n log n), onde n é o tamanho do maior vetor de entrada.
+Isso ocorre devido ao passo de ordenação dos vetores usando Arrays.sort(). A comparação e a criação do 
+vetor de interseção são executadas em tempo linear.

@@ -1,0 +1,12 @@
+O método ordenarBubbleSort() implementa o algoritmo Bubble Sort para ordenar os elementos da lista. 
+O algoritmo compara pares de elementos e os troca se estiverem fora de ordem, repetindo
+esse processo até que a lista esteja completamente ordenada.
+
+O algoritmo é executado dentro de um loop do-while. Inicialmente, definimos uma variável trocou como
+false para controlar se ocorreu alguma troca durante uma passagem pelo loop. Em cada iteração do loop,
+percorremos a lista comparando elementos. Se encontrarmos um par de elementos fora de ordem,
+realizamos a troca utilizando uma variável temporária. A variável trocou é definida como true para indicar
+que ocorreu uma troca durante a passagem.
+
+O loop continua executando enquanto trocou for true, o que significa que ainda há elementos fora de ordem 
+e é necessário realizar outra passagem pelo loop para ordená-los.

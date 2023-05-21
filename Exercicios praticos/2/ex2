@@ -1,0 +1,24 @@
+public void selectionSort() {
+    for (int i = tamanho() - 1; i >= 0; i--) {
+        int maior = posMaior(i);
+        if (maior != i)
+            troca(i, maior);
+    }
+}
+
+/* Métodos auxiliares: */
+private int posMaior(int fim) {
+    int maior = fim;
+    for (int i = fim - 1; i >= 0; i--) {
+        if (elementos[i] > elementos[maior]) {
+            maior = i;
+        }
+    }
+    return maior;
+}
+
+private void troca(int a, int b) {
+    int aux = elementos[a];
+    elementos[a] = elementos[b];
+    elementos[b] = aux;
+}
