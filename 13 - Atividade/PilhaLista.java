@@ -2,7 +2,6 @@ public class PilhaLista implements IPilha {
 
     private Noh topo;
 
-    @Override
     public boolean push(Object info) {
         Noh novo = new Noh(info);
         if (this.isEmpty())

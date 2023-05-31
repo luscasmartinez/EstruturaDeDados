@@ -7,6 +7,9 @@ public class Noh<T> {
         this.proximo = null;
     }
 
+    public void setProximo(Noh topo) {
+    }
+
 
     public T getInfo() {
         return this.info;
