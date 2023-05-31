@@ -20,6 +20,4 @@ public class Noh {
     public void setProximo(Noh n) {
         this.proximo = n;
     }
-   
-
 }
