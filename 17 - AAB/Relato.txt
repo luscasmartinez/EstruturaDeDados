@@ -1,0 +1,19 @@
+Método de Impressão (percorrer a árvore):
+O método de impressão da árvore implementado na classe AAB é baseado em uma travessia em ordem da árvore binária. 
+Ele utiliza uma abordagem recursiva para percorrer a árvore, visitando primeiro a subárvore esquerda, em seguida, imprimindo o valor
+do nó atual e, por fim, visitando a subárvore direita.
+
+O método imprimir recebe como parâmetro o nó atual a partir do qual a impressão da árvore é iniciada. Dentro do método, é verificado 
+se o nó é nulo, caso seja, a recursão é encerrada. Caso contrário, a função printTree é chamada recursivamente para a subárvore esquerda,
+em seguida, o valor do nó atual é impresso e, por fim, a função imprimir é chamada recursivamente para a subárvore direita. 
+Isso garante que os valores sejam impressos em ordem crescente.
+
+Método de Busca:
+O método de busca implementado na classe AAB permite buscar um elemento específico na árvore binária. A busca é realizada de forma 
+recursiva, iniciando a partir da raiz (raiz) da árvore. O método procurar recebe como parâmetro o elemento a ser buscado e retorna um 
+valor booleano indicando se o elemento foi encontrado ou não.
+
+Dentro do método é verificado se o nó atual é nulo. Se for nulo, significa que a árvore foi percorrida completamente e o elemento
+não foi encontrado, então o método retorna false. Caso contrário, é feita uma comparação entre o valor do nó atual e o elemento buscado. 
+Se forem iguais, significa que o elemento foi encontrado e o método retorna true. Se o elemento for menor que o valor do nó atual, 
+a busca é chamada recursivamente para a subárvore esquerda. Caso contrário, a busca é chamada recursivamente para a subárvore direita.
