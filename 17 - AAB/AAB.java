@@ -89,17 +89,5 @@ public class AAB {
         }
     }
 
-    public int getProfundidade() {
-        return getProfundidade(raiz);
-    }
-
-    private int getProfundidade(Noh node) {
-        if (node == null)
-            return 0;
-
-        int profEsq = getProfundidade(node.esq);
-        int profDir = getProfundidade(node.dir);
-
-        return Math.max(profEsq, profDir) + 1;
-    }
+ 
 }

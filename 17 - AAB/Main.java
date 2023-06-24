@@ -15,7 +15,6 @@ public class Main {
         
         arvere.imprime();
         System.out.println();
-        System.out.println("Profundidade da árvore: " + arvere.getProfundidade());
 
         // Adicionando nós para aumentar a profundidade
         arvere.add(99);
@@ -30,6 +29,5 @@ public class Main {
         
        arvere.imprime();
        System.out.println();
-       System.out.println("Profundidade da árvore: " + arvere.getProfundidade());
     }
 }
